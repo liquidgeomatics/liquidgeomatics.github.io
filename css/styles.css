@@ -49,8 +49,7 @@
         .silex-id-1474394621033-3 {
             top: 0px;
             left: 0px;
-            background-color: rgba(99, 178, 216, 1);
-            background-image: url('../assets/bg.jpg');
+            background-color: rgba(37, 67, 104, 1);
             background-size: cover;
             min-width: 1000px;
         }
@@ -64,11 +63,11 @@
         }
         
         .silex-id-1474394621032-2 {
-            min-height: 669px;
+            min-height: 520px;
             background-color: transparent;
             width: 1000px;
             top: 15px;
-            left: 277px;
+            left: 286px;
         }
         
         @media only screen and (max-width: 480px),
