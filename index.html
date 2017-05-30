@@ -1,195 +1,20 @@
-<!DOCTYPE html>
-<html>
-
-<head>
+<!DOCTYPE html><html><head>    
     <meta charset="UTF-8">
 
 
     <meta name="generator" content="Silex v2.2.7">
 
-    <script type="text/javascript" src="//editor.silex.me/static/2.7/jquery.js" data-silex-static=""></script>
-    <script type="text/javascript" src="//editor.silex.me/static/2.7/jquery-ui.js" data-silex-static=""></script>
-    <script type="text/javascript" src="//editor.silex.me/static/2.7/pageable.js" data-silex-static=""></script>
-    <script type="text/javascript" src="//editor.silex.me/static/2.7/front-end.js" data-silex-static=""></script>
-    <link rel="stylesheet" href="//editor.silex.me/static/2.7/normalize.css" data-silex-static="">
-    <link rel="stylesheet" href="//editor.silex.me/static/2.7/front-end.css" data-silex-static="">
-    <style type="text/css" class="silex-style">
-        div.hero-bottom {
-            top: auto;
-            bottom: 30px;
-        }
-        
-        body {
-            font-family: arial, sans-serif;
-            font-size: 19px;
-            padding: 0 !important;
-            /* no white spoace at the top in mobile */
-        }
-        
-        h1 {
-            font-size: 70px;
-            font-weight: 100;
-            line-height: .8;
-        }
-        
-        h2 {
-            font-size: 25px;
-            font-weight: 100;
-            line-height: 1.5;
-        }
-        
-        .bg-grad {
-            background: #82c2ed;
-            background: -moz-linear-gradient(-45deg, #82c2ed 0, #a381ee 100%);
-            background: -webkit-linear-gradient(-45deg, #82c2ed 0, #a381ee 100%);
-            background: linear-gradient(135deg, #82c2ed 0, #a381ee 100%);
-        }
-        
-        .bg-grad2 {
-            background: #8adbdb;
-            background: -moz-linear-gradient(-45deg, #8adbdb 0, #344e9b 100%);
-            background: -webkit-linear-gradient(-45deg, #8adbdb 0, #344e9b 100%);
-            background: linear-gradient(135deg, #8adbdb 0, #344e9b 100%);
-            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8adbdb', endColorstr='#344e9b', GradientType=1);
-        }
-        
-        .scroll-down {
-            cursor: pointer;
-        }
-    </style>
-    <script type="text/javascript" class="silex-script">
-        function fullHeight() {
-            var RATIO = 1; // 3/4
-            if($(window).width() < 480) return;
-            $('.hero').each(function() {
-                // get section content (for sections only)
-                var sectionContent = $(this).find('.silex-element-content');
-                // if this is a section, get its content container's min-height and apply it to the section
-                // so that the section has a minimum height
-                var minHeight = sectionContent.length ? sectionContent.css('min-height') : '';
-                $(this).css({
-                    'height': $(window).height()*RATIO,
-                    'min-height': minHeight
-                });
-            });
-            $('.hero-centered').each(function() {
-                var minHeight = $(this).css('min-height');
-                $(this).css({
-                    'top': '50%',
-                    'margin-top': Math.round(-parseInt(minHeight) / 2) + 'px'
-                });
-            });
-        }
-        $(window).resize(fullHeight);
-        $(window).ready(fullHeight);
-    $(window).ready(function() {
-        $('.scroll-down').click(function() {
-            var container = $('html,body'),
-            scrollTo = $('.fold');
-        container.animate({
-            scrollTop: scrollTo.offset().top - container.offset().top + container.scrollTop()
-        });
-        });
-    });
+    <script type="text/javascript" src="js/jquery.js" data-silex-static=""></script>
+    <script type="text/javascript" src="js/jquery-ui.js" data-silex-static=""></script>
+    <script type="text/javascript" src="js/pageable.js" data-silex-static=""></script>
+    <script type="text/javascript" src="js/front-end.js" data-silex-static=""></script>
+    <link rel="stylesheet" href="css/normalize.css" data-silex-static="">
+    <link rel="stylesheet" href="css/front-end.css" data-silex-static="">
     
     
     
-    
-var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-
-/*
- * animation widget from here: https://github.com/silexlabs/Silex/issues/443
- */
-$(function() {
-    if(!isMobile) {
-        window.sr = ScrollReveal({
-            distance: '100px'
-        });
-        sr.reveal('.from-left', { origin:  'left'});
-        sr.reveal('.from-right', { origin:  'right'});
-        sr.reveal('.from-top', { origin:  'top'});
-        sr.reveal('.from-bottom', { origin:  'bottom'});
-    }
-})
-    </script>
-    <style class="silex-inline-styles" type="text/css">
-        .body-initial {
-            background-color: rgba(255, 255, 255, 1);
-        }
-        
-        .silex-id-1474394621033-3 {
-            top: 0px;
-            left: 0px;
-            background-color: rgba(37, 67, 104, 1);
-            background-size: cover;
-            min-width: 1000px;
-        }
-        
-        @media only screen and (max-width: 480px),
-        only screen and (max-device-width: 480px) {
-            .silex-id-1474394621033-3 {
-                top: 60px;
-                left: 0px;
-            }
-        }
-        
-        .silex-id-1474394621032-2 {
-            min-height: 520px;
-            background-color: transparent;
-            width: 1000px;
-            top: 15px;
-            left: 286px;
-        }
-        
-        @media only screen and (max-width: 480px),
-        only screen and (max-device-width: 480px) {
-            .silex-id-1474394621032-2 {
-                min-height: 871px;
-            }
-        }
-        
-        .silex-id-1496167709790-0 {
-            min-height: 74px;
-            width: 74px;
-            top: 14px;
-            left: 13px;
-        }
-        
-        .silex-id-1496167937725-3 {
-            min-height: 26px;
-            width: 263px;
-            top: 15px;
-            left: 723px;
-        }
-        
-        .silex-id-1484575683599-3 {
-            min-height: 255px;
-            width: 531px;
-            top: -2px;
-            left: 97px;
-        }
-        
-        @media only screen and (max-width: 480px),
-        only screen and (max-device-width: 480px) {
-            .silex-id-1484575683599-3 {
-                top: 16px;
-                left: 11px;
-                width: 401px;
-                min-height: 267px;
-            }
-        }
-        
-        .silex-id-1496169209886-7 {
-            min-height: 312px;
-            width: 996px;
-            top: 123px;
-            left: 2px;
-        }
-    </style>
     <title>Smart and Simple</title>
-    <script type="text/javascript" class="silex-json-styles">
-        [{"desktop":{"body-initial":{"background-color":"rgba(255,255,255,1)"},"silex-id-1474394621033-3":{"top":"0px","left":"0px","background-color":"rgba(37,67,104,1)","background-image":"","background-size":"cover","min-width":"1000px"},"silex-id-1474394621032-2":{"min-height":"520px","background-color":"transparent","width":"1000px","top":"15px","left":"286px"},"silex-id-1474394605264-1":{"min-height":"100px","width":"100px","top":"100px","left":"100px"},"silex-id-1474394605263-0":{"min-height":"100px","background-color":"transparent"},"silex-id-1442914737143-3":{"min-height":"75px","width":"349px","top":"56px","left":"337px"},"silex-id-1478366444112-0":{"min-height":"100px","background-color":"transparent","width":"1200px"},"silex-id-1478366450713-2":{"min-height":"219px","background-color":"transparent","width":"1200px"},"silex-id-1484575683599-3":{"min-height":"255px","width":"531px","top":"-2px","left":"97px"},"silex-id-1484587463012-10":{"min-height":"331px","background-color":"transparent"},"silex-id-1484589600542-14":{"min-height":"120px","width":"270px","top":"115px","left":"0px"},"silex-id-1484589884177-15":{"min-height":"107px","width":"107px","top":"87px","left":"375px"},"silex-id-1484589890126-16":{"min-height":"128px","width":"128px","top":"74px","left":"616px"},"silex-id-1484589897940-17":{"min-height":"64px","width":"64px","top":"107px","left":"846px"},"silex-id-1484589925987-18":{"min-height":"42px","width":"154px","top":"200px","left":"405px"},"silex-id-1484589940350-19":{"min-height":"33px","width":"154px","top":"200px","left":"631px"},"silex-id-1484589955761-20":{"min-height":"33px","width":"154px","top":"200px","left":"846px"},"silex-id-1484590211529-21":{"min-height":"485px","background-color":"transparent"},"silex-id-1484658276174-26":{"min-height":"189px","width":"353px","top":"106px","left":"550px"},"silex-id-1484658377172-27":{"min-height":"63px","width":"192px","top":"297px","left":"550px","border-width":"1px 1px 1px 1px ","border-style":"solid","border-radius":"6px 6px 6px 6px ","border-color":"#63b2d8"},"silex-id-1484658633790-28":{"min-height":"1160px","background-color":"transparent"},"silex-id-1484658879156-30":{"min-height":"279px","width":"450px","top":"104px","left":"99px"},"silex-id-1484658906426-31":{"min-height":"303px","width":"500px","top":"145px","left":"0px"},"silex-id-1484659675199-32":{"min-height":"189px","width":"314px","top":"177px","left":"686px","border-color":"#000000"},"silex-id-1484659675214-33":{"min-height":"63px","width":"192px","top":"367px","left":"686px","border-width":"","border-style":"","border-radius":"6px 6px 6px 6px ","border-color":"#000000","background-color":"rgba(245,245,245,1)"},"silex-id-1484659915267-34":{"min-height":"366px","width":"466px","top":"647px","left":"534px"},"silex-id-1484659957952-35":{"min-height":"189px","width":"314px","top":"685px","left":"0px","border-color":"#000000"},"silex-id-1484659957955-36":{"min-height":"63px","width":"192px","top":"875px","left":"0px","border-width":"","border-style":"","border-radius":"6px 6px 6px 6px ","border-color":"#000000","background-color":"rgba(245,245,245,1)"},"silex-id-1484660025157-37":{"min-height":"720px","background-color":"transparent"},"silex-id-1484660331538-40":{"min-height":"663px","width":"347px","top":"57px","left":"653px"},"silex-id-1484660581795-47":{"min-height":"59px","width":"59px","top":"100px","left":"465px"},"silex-id-1484660587788-48":{"min-height":"59px","width":"59px","top":"100px","left":"315px"},"silex-id-1484660590493-49":{"min-height":"59px","width":"59px","top":"100px","left":"174px"},"silex-id-1484660593104-50":{"min-height":"59px","width":"59px","top":"100px","left":"25px"},"silex-id-1484660694480-51":{"min-height":"59px","width":"602px","top":"154px","left":"0px"},"silex-id-1484660819078-52":{"min-height":"323px","width":"647px","top":"254px","left":"0px","border-color":"#000000"},"silex-id-1484661186677-53":{"min-height":"63px","width":"192px","top":"590px","left":"0px","border-width":"1px 1px 1px 1px ","border-style":"solid","border-radius":"6px 6px 6px 6px ","border-color":"#ffffff","background-color":"transparent"},"silex-id-1484661251321-54":{"min-height":"804px","background-color":"transparent"},"silex-id-1484661716413-56":{"min-height":"513px","width":"600px","top":"124px","left":"210px"},"silex-id-1484662096459-57":{"min-height":"415px","background-color":"transparent"},"silex-id-1484662129693-60":{"min-height":"477px","background-color":"transparent"},"silex-id-1484662129693-61":{"min-height":"189px","width":"353px","top":"106px","left":"550px"},"silex-id-1484662129694-62":{"min-height":"279px","width":"450px","top":"104px","left":"99px"},"silex-id-1484662129694-63":{"min-height":"63px","width":"192px","top":"297px","left":"550px","border-width":"1px 1px 1px 1px ","border-style":"solid","border-radius":"6px 6px 6px 6px ","border-color":"#63b2d8"},"silex-id-1484662183052-64":{"min-height":"192px","width":"515px","background-color":"transparent","top":"120px","left":"258px"},"silex-id-1484662183053-65":{"min-height":"83px","width":"494px","top":"9px","left":"11px"},"silex-id-1484662183053-66":{"min-height":"43px","width":"158px","top":"126px","left":"81px"},"silex-id-1484662183053-67":{"min-height":"43px","width":"158px","top":"126px","left":"268px"},"silex-id-1496167709790-0":{"min-height":"74px","width":"74px","top":"14px","left":"13px"},"silex-id-1496167769014-1":{"min-height":"100px","background-color":"rgb(255, 255, 255)"},"silex-id-1496167937725-3":{"min-height":"26px","width":"263px","top":"15px","left":"723px"},"silex-id-1496169193007-6":{"min-height":"232px","width":"753px","top":"0px","left":"245px"},"silex-id-1496169209886-7":{"min-height":"312px","width":"996px","top":"123px","left":"2px"}},"mobile":{"silex-id-1484575683599-3":{"top":"16px","left":"11px","width":"401px","min-height":"267px"},"silex-id-1474394621033-3":{"top":"60px","left":"0px"},"silex-id-1474394621032-2":{"min-height":"871px"},"silex-id-1484589600542-14":{"top":"2px","left":"11px","width":"423px","min-height":"115px"},"silex-id-1484589925987-18":{"top":"139px","left":"75px","width":"368px","min-height":"42px"},"silex-id-1484589940350-19":{"top":"215px","left":"78px","width":"361px","min-height":"33px"},"silex-id-1484589955761-20":{"top":"282px","left":"78px","width":"361px","min-height":"33px"},"silex-id-1484658276174-26":{"top":"279px","left":"11px","width":"423px","min-height":"189px"},"silex-id-1484659675199-32":{"top":"0px","left":"12px","width":"421px","min-height":"189px"},"silex-id-1484590211529-21":{"min-height":"670px"},"silex-id-1484659957952-35":{"top":"921px","left":"11px","width":"423px","min-height":"189px"},"silex-id-1484658633790-28":{"min-height":"1425px"},"silex-id-1484661251321-54":{"min-height":"582px"},"silex-id-1484661716413-56":{"top":"69px","left":"11px","width":"423px","min-height":"445px"},"silex-id-1484662129693-61":{"top":"279px","left":"11px","width":"423px","min-height":"189px"},"silex-id-1442914737143-3":{"top":"57px","left":"11px","width":"423px","min-height":"105px"},"silex-id-1484660694480-51":{"top":"722px","left":"11px","width":"423px","min-height":"80px"},"silex-id-1484589884177-15":{"top":"116px","left":"2px","width":"67px","min-height":"67px"},"silex-id-1484589890126-16":{"top":"268px","left":"18px","width":"60px","min-height":"60px"},"silex-id-1484589897940-17":{"top":"269px","left":"12px","width":"58px","min-height":"58px"},"silex-id-1484660025157-37":{"min-height":"1205px"}},"componentData":{}}]
-    </script>
+    
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2.2" data-silex-viewport="">
 
     <meta name="website-width" content="1000">
@@ -256,14 +81,14 @@ $(function() {
 
 
     <meta name="description" content="A smart HTML template by @SilexLabs for your project">
-    <link href="../../../../../../../assets/1484611390_android_phone.png" rel="shortcut icon">
+    <link href="css/1484611390_android_phone.png" rel="shortcut icon">
 
     <meta name="twitter:title" content="Smart &amp; Simple">
     <meta name="og:title" content="Smart &amp; Simple">
     <meta name="twitter:description" content="This is a nice web template for my mobile app">
     <meta name="og:description" content="This is a nice web template for my mobile app">
     <meta name="twitter:site" content="silexlabs">
-    <meta name="publicationPath" content="/api/1.0/github/exec/put//liquidgeomatics.github.io/master">
+    
 
     <meta name="twitter:card" content="summary">
 
@@ -290,9 +115,7 @@ $(function() {
     <!-- Silex HEAD tag do not remove -->
     <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.2.0/scrollreveal.min.js"></script>
     <!-- End of Silex HEAD tag do not remove -->
-</head>
-
-<body data-silex-id="body-initial" class="body-initial enable-mobile silex-runtime" data-silex-type="container">
+    <link href="css/styles.css" rel="stylesheet">    <script src="js/script.js" type="text/javascript"></script></head><body class="body-initial enable-mobile silex-runtime silex-published">
     <div class="silex-pages">
 
         <a id="page-page-1" data-silex-type="page" class="page-element page-link-active">Page 1</a></div>
@@ -310,7 +133,7 @@ $(function() {
 
 
 
-            <div data-silex-type="image" class="editable-style silex-id-1496167709790-0 image-element" data-silex-id="silex-id-1496167709790-0"><img src="../../../../../dropbox/exec/get/Personal/LiquidGeomatics/Website/LGlogo.png" class="silex-element-content"></div>
+            <div data-silex-type="image" class="editable-style silex-id-1496167709790-0 image-element" data-silex-id="silex-id-1496167709790-0"><img src="assets/LGlogo.png" class="silex-element-content"></div>
             <div data-silex-type="text" class="editable-style silex-id-1496167937725-3 text-element" data-silex-id="silex-id-1496167937725-3">
                 <div class="silex-element-content normal">
                     <font face="verdana, sans-serif" color="#ffffff" size="2">About&nbsp; &nbsp; Services&nbsp; &nbsp; Projects&nbsp; &nbsp; Contact</font>
@@ -328,7 +151,7 @@ $(function() {
                     </div>
                 </div>
             </div>
-            <div data-silex-type="image" class="editable-style silex-id-1496169209886-7 image-element" data-silex-id="silex-id-1496169209886-7"><img src="../../../../../dropbox/exec/get/GB%20broad%20small.png" class="silex-element-content"></div>
+            <div data-silex-type="image" class="editable-style silex-id-1496169209886-7 image-element" data-silex-id="silex-id-1496169209886-7"><img src="assets/GB%20broad%20small.png" class="silex-element-content"></div>
         </div>
     </div>
 
@@ -414,6 +237,6 @@ $(function() {
 
 
 
-</body>
 
-</html>
+
+</body></html>
