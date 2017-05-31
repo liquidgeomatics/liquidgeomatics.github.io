@@ -19,8 +19,8 @@
         }
         
         .silex-id-1496171637415-0 {
-            min-height: 31px;
-            width: 291px;
+            min-height: 43px;
+            width: 41px;
             top: 23px;
             left: 897px;
         }
@@ -46,20 +46,22 @@
             background-image: url('../assets/GB%20broad%20small.png');
             background-repeat: no-repeat;
             background-size: cover;
-            min-width: 1200px;
+            min-width: 1192px;
         }
         
         .silex-id-1474394621032-2 {
-            min-height: 400px;
+            min-height: 472px;
             background-color: transparent;
-            width: 1200px;
+            width: 1192px;
             background-size: contain;
             background-repeat: no-repeat;
+            top: 15px;
+            left: 207px;
         }
         
         .silex-id-1496172700359-1 {
             min-height: 72px;
-            width: 1614px;
+            width: 1606px;
             top: 343px;
             left: -207px;
             background-color: rgba(107, 116, 114, 0.8352941176470589);
@@ -136,5 +138,26 @@
             min-height: 196px;
             top: 6px;
             left: 12px;
+        }
+        
+        .silex-id-1496245596511-10 {
+            min-height: 43px;
+            width: 60px;
+            top: 43px;
+            left: 1162px;
+        }
+        
+        .silex-id-1496245687356-11 {
+            min-height: 44px;
+            width: 55px;
+            top: 42px;
+            left: 1237px;
+        }
+        
+        .silex-id-1496245771918-12 {
+            min-height: 44px;
+            width: 55px;
+            top: 43px;
+            left: 1309px;
         }
     
