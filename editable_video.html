@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- generator meta tag -->
+    <!-- leave this for stats and Silex version check -->
+    <meta name="generator" content="Silex v2.2.7">
+    <!-- End of generator meta tag -->
+    <script type="text/javascript" src="//editor.silex.me/static/2.7/jquery.js" data-silex-static=""></script>
+    <script type="text/javascript" src="//editor.silex.me/static/2.7/jquery-ui.js" data-silex-static=""></script>
+    <script type="text/javascript" src="//editor.silex.me/static/2.7/pageable.js" data-silex-static=""></script>
+    <script type="text/javascript" src="//editor.silex.me/static/2.7/front-end.js" data-silex-static=""></script>
+    <link rel="stylesheet" href="//editor.silex.me/static/2.7/normalize.css" data-silex-static="">
+    <link rel="stylesheet" href="//editor.silex.me/static/2.7/front-end.css" data-silex-static="">
+
+    <style type="text/css" class="silex-style"></style>
+    <script type="text/javascript" class="silex-script"></script>
+    <style class="silex-inline-styles" type="text/css">
+        .body-initial {
+            background-color: rgba(22, 46, 116, 0.9294117647058824);
+        }
+        
+        .silex-id-1478366444112-1 {
+            top: 5px;
+            left: 5px;
+            background-color: rgba(22, 46, 116, 0.9294117647058824);
+            min-width: 960px;
+        }
+        
+        .silex-id-1478366444112-0 {
+            min-height: 92px;
+            background-color: transparent;
+            width: 960px;
+            top: 15px;
+            left: 216px;
+        }
+        
+        .silex-id-1496171637415-0 {
+            min-height: 43px;
+            width: 41px;
+            top: 25px;
+            left: 697px;
+        }
+        
+        .silex-id-1496171474022-0 {
+            min-height: 74px;
+            width: 74px;
+            top: 7px;
+            left: 8px;
+        }
+        
+        .silex-id-1496171481889-1 {
+            min-height: 33px;
+            width: 212px;
+            top: 31px;
+            left: 91px;
+        }
+        
+        .silex-id-1496245596511-10 {
+            min-height: 43px;
+            width: 58px;
+            top: 25px;
+            left: 751px;
+        }
+        
+        .silex-id-1496245687356-11 {
+            min-height: 43px;
+            width: 55px;
+            top: 25px;
+            left: 820px;
+        }
+        
+        .silex-id-1496245771918-12 {
+            min-height: 43px;
+            width: 55px;
+            top: 25px;
+            left: 885px;
+        }
+        
+        .silex-id-1496249160049-17 {
+            min-height: 21px;
+            width: 282px;
+            top: 38px;
+            left: 305px;
+        }
+        
+        .silex-id-1496251948909-42 {
+            min-height: 43px;
+            width: 41px;
+            top: 25px;
+            left: 644px;
+        }
+        
+        .silex-id-1474394621033-3 {
+            top: 129px;
+            left: 5px;
+            background-color: rgba(22, 46, 116, 0.9294117647058824);
+            background-image: url('assets/GB%20broad%20small.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-width: 960px;
+        }
+        
+        .silex-id-1474394621032-2 {
+            min-height: 485px;
+            background-color: transparent;
+            width: 960px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            top: 15px;
+            left: 267px;
+        }
+        
+        .silex-id-1478366450713-3 {
+            top: 549px;
+            left: 0px;
+            background-color: rgba(22, 46, 116, 0.9294117647058824);
+            min-width: 960px;
+        }
+        
+        .silex-id-1478366450713-2 {
+            min-height: 324px;
+            background-color: transparent;
+            width: 960px;
+            top: 15px;
+            left: 267px;
+        }
+        
+        .silex-id-1496243854412-1 {
+            width: 260px;
+            background-color: rgba(114, 114, 114, 0.34509803921568627);
+            min-height: 272px;
+            top: 25px;
+            left: 49px;
+        }
+        
+        .silex-id-1496244135607-3 {
+            width: 121px;
+            min-height: 56px;
+            top: 207px;
+            left: 70px;
+            background-color: rgba(114, 114, 114, 0.34509803921568627);
+        }
+        
+        .silex-id-1496243999010-2 {
+            width: 236px;
+            min-height: 196px;
+            top: 6px;
+            left: 12px;
+        }
+        
+        .silex-id-1496244282532-4 {
+            width: 260px;
+            background-color: rgba(114, 114, 114, 0.34509803921568627);
+            min-height: 272px;
+            top: 25px;
+            left: 348px;
+        }
+        
+        .silex-id-1496244282533-5 {
+            width: 121px;
+            min-height: 56px;
+            top: 207px;
+            left: 70px;
+            background-color: rgba(114, 114, 114, 0.34509803921568627);
+        }
+        
+        .silex-id-1496244282533-6 {
+            width: 241px;
+            min-height: 196px;
+            top: 6px;
+            left: 11px;
+        }
+        
+        .silex-id-1496244301143-7 {
+            width: 260px;
+            background-color: rgba(114, 114, 114, 0.34509803921568627);
+            min-height: 272px;
+            top: 25px;
+            left: 650px;
+        }
+        
+        .silex-id-1496244301144-9 {
+            width: 236px;
+            min-height: 196px;
+            top: 6px;
+            left: 12px;
+        }
+        
+        .silex-id-1496249959140-18 {
+            top: 132px;
+            left: 5px;
+            background-color: rgba(247, 247, 247, 0.9294117647058824);
+            min-width: 960px;
+        }
+        
+        .silex-id-1496249959140-19 {
+            min-height: 552px;
+            background-color: transparent;
+            width: 960px;
+            top: 15px;
+            left: 216px;
+        }
+        
+        .silex-id-1496249959142-26 {
+            min-height: 23px;
+            width: 345px;
+            top: 38px;
+            left: 305px;
+        }
+        
+        .silex-id-1496249959142-22 {
+            min-height: 58px;
+            width: 172px;
+            top: 18px;
+            left: 400px;
+        }
+        
+        .silex-id-1496250132058-27 {
+            width: 907px;
+            min-height: 54px;
+            top: 91px;
+            left: 26px;
+        }
+        
+        .silex-id-1496250304629-37 {
+            width: 907px;
+            min-height: 105px;
+            top: 155px;
+            left: 26px;
+        }
+        
+        .silex-id-1496250406127-38 {
+            width: 907px;
+            background-color: transparent;
+            min-height: 177px;
+            top: 358px;
+            left: 26px;
+        }
+        
+        .silex-id-1496250473758-39 {
+            width: 149px;
+            min-height: 149px;
+            top: 14px;
+            left: 13px;
+        }
+        
+        .silex-id-1496250485886-40 {
+            width: 302px;
+            min-height: 149px;
+            top: 14px;
+            left: 172px;
+            background-color: rgba(22, 46, 116, 0.9294117647058824);
+        }
+        
+        .silex-id-1496250669252-41 {
+            width: 405px;
+            min-height: 149px;
+            top: 14px;
+            left: 487px;
+        }
+        
+        .silex-id-1496252135564-43 {
+            top: 100px;
+            left: NaNpx;
+            background-color: rgba(247, 247, 247, 0.9294117647058824);
+            min-width: 960px;
+        }
+        
+        .silex-id-1496252135564-44 {
+            min-height: 396px;
+            background-color: transparent;
+            width: 960px;
+            top: 15px;
+            left: 259px;
+        }
+        
+        .silex-id-1496252135564-45 {
+            min-height: 23px;
+            width: 345px;
+            top: 38px;
+            left: 305px;
+        }
+        
+        .silex-id-1496252135565-46 {
+            min-height: 58px;
+            width: 249px;
+            top: 18px;
+            left: 366px;
+        }
+        
+        .silex-id-1496252135565-47 {
+            width: 913px;
+            min-height: 53px;
+            top: 91px;
+            left: 23px;
+        }
+        
+        .silex-id-1496252135565-48 {
+            width: 907px;
+            min-height: 105px;
+            top: 155px;
+            left: 26px;
+        }
+        
+        .silex-id-1496252476324-53 {
+            top: 132px;
+            left: 5px;
+            background-color: rgba(247, 247, 247, 0.9294117647058824);
+            min-width: 960px;
+        }
+        
+        .silex-id-1496252476325-54 {
+            min-height: 1001px;
+            background-color: transparent;
+            width: 960px;
+            top: 15px;
+            left: 249px;
+        }
+        
+        .silex-id-1496252476325-55 {
+            min-height: 23px;
+            width: 345px;
+            top: 38px;
+            left: 305px;
+        }
+        
+        .silex-id-1496252476325-56 {
+            min-height: 58px;
+            width: 249px;
+            top: 18px;
+            left: 366px;
+        }
+        
+        .silex-id-1496252504717-59 {
+            width: 935px;
+            background-color: transparent;
+            min-height: 266px;
+            top: 429px;
+            left: 13px;
+        }
+        
+        .silex-id-1496252504718-62 {
+            width: 525px;
+            min-height: 249px;
+            top: 9px;
+            left: 400px;
+        }
+        
+        .silex-id-1496253400407-76 {
+            width: 378px;
+            min-height: 249px;
+            top: 9px;
+            left: 9px;
+        }
+        
+        .silex-id-1496253106807-68 {
+            width: 935px;
+            background-color: transparent;
+            min-height: 266px;
+            top: 138px;
+            left: 12px;
+        }
+        
+        .silex-id-1496253106808-69 {
+            width: 525px;
+            min-height: 249px;
+            top: -1px;
+            left: 400px;
+        }
+        
+        .silex-id-1496253260886-72 {
+            width: 378px;
+            min-height: 249px;
+            top: 9px;
+            left: 9px;
+        }
+        
+        .silex-id-1496253332418-73 {
+            width: 935px;
+            background-color: transparent;
+            min-height: 262px;
+            top: 725px;
+            left: 13px;
+        }
+        
+        .silex-id-1496253332418-74 {
+            width: 525px;
+            min-height: 249px;
+            top: 9px;
+            left: 400px;
+        }
+        
+        .silex-id-1496253332419-75 {
+            width: 378px;
+            min-height: 249px;
+            top: 9px;
+            left: 9px;
+        }
+        
+        .silex-id-1496256820339-77 {
+            top: 132px;
+            left: 5px;
+            background-color: rgba(247, 247, 247, 0.9294117647058824);
+            min-width: 960px;
+        }
+        
+        .silex-id-1496256820339-78 {
+            min-height: 608px;
+            background-color: transparent;
+            width: 960px;
+            top: 15px;
+            left: 259px;
+        }
+        
+        .silex-id-1496256820340-79 {
+            min-height: 23px;
+            width: 345px;
+            top: 38px;
+            left: 305px;
+        }
+        
+        .silex-id-1496256820340-80 {
+            min-height: 58px;
+            width: 249px;
+            top: 18px;
+            left: 366px;
+        }
+        
+        .silex-id-1496256848753-83 {
+            width: 929px;
+            height: 400px;
+            background-color: transparent;
+            top: 199px;
+            left: 15px;
+        }
+        
+        .silex-id-1496256926716-84 {
+            width: 913px;
+            min-height: 26px;
+            top: 134px;
+            left: 23px;
+        }
+    </style>
+    <title>Liquid Geomatics</title>
+    <script type="text/javascript" class="silex-json-styles">
+        [{"desktop":{"body-initial":{"background-color":"rgba(22,46,116,0.9294117647058824)"},"silex-id-1474394621033-3":{"top":"129px","left":"5px","background-color":"rgba(22,46,116,0.9294117647058824)","background-image":"url('assets/GB%20broad%20small.png')","background-repeat":"no-repeat","background-size":"cover","min-width":"960px"},"silex-id-1474394621032-2":{"min-height":"485px","background-color":"transparent","width":"960px","background-image":"","background-size":"contain","background-repeat":"no-repeat","top":"15px","left":"267px"},"silex-id-1474394605264-1":{"min-height":"100px","width":"100px","top":"100px","left":"100px"},"silex-id-1474394605263-0":{"min-height":"100px","background-color":"transparent"},"silex-id-1478366444112-0":{"min-height":"92px","background-color":"transparent","width":"960px","top":"15px","left":"216px"},"silex-id-1478366444112-1":{"top":"5px","left":"5px","background-color":"rgba(22,46,116,0.9294117647058824)","min-width":"960px"},"silex-id-1478366450713-2":{"min-height":"324px","background-color":"transparent","width":"960px","top":"15px","left":"267px"},"silex-id-1478366450713-3":{"top":"549px","left":"0px","background-color":"rgba(22,46,116,0.9294117647058824)","min-width":"960px"},"silex-id-1496171474022-0":{"min-height":"74px","width":"74px","top":"7px","left":"8px"},"silex-id-1496171481889-1":{"min-height":"33px","width":"212px","top":"31px","left":"91px"},"silex-id-1496171637415-0":{"min-height":"43px","width":"41px","top":"25px","left":"697px"},"silex-id-1496243854412-1":{"width":"260px","background-color":"rgba(114,114,114,0.34509803921568627)","min-height":"272px","top":"25px","left":"49px"},"silex-id-1496243999010-2":{"width":"236px","min-height":"196px","top":"6px","left":"12px"},"silex-id-1496244135607-3":{"width":"121px","min-height":"56px","top":"207px","left":"70px","background-color":"rgba(114,114,114,0.34509803921568627)"},"silex-id-1496244282533-5":{"width":"121px","min-height":"56px","top":"207px","left":"70px","background-color":"rgba(114,114,114,0.34509803921568627)"},"silex-id-1496244282533-6":{"width":"241px","min-height":"196px","top":"6px","left":"11px"},"silex-id-1496244282532-4":{"width":"260px","background-color":"rgba(114,114,114,0.34509803921568627)","min-height":"272px","top":"25px","left":"348px"},"silex-id-1496244301144-9":{"width":"236px","min-height":"196px","top":"6px","left":"12px"},"silex-id-1496244301143-7":{"width":"260px","background-color":"rgba(114,114,114,0.34509803921568627)","min-height":"272px","top":"25px","left":"650px"},"silex-id-1496245596511-10":{"min-height":"43px","width":"58px","top":"25px","left":"751px"},"silex-id-1496245687356-11":{"min-height":"43px","width":"55px","top":"25px","left":"820px"},"silex-id-1496245771918-12":{"min-height":"43px","width":"55px","top":"25px","left":"885px"},"silex-id-1496248064661-3":{"min-height":"43px","width":"41px","top":"23px","left":"707px"},"silex-id-1496248064662-4":{"min-height":"74px","width":"74px","top":"7px","left":"8px"},"silex-id-1496248064662-5":{"min-height":"47px","width":"277px","top":"31px","left":"91px"},"silex-id-1496248064662-6":{"min-height":"43px","width":"58px","top":"23px","left":"761px"},"silex-id-1496248064662-7":{"min-height":"43px","width":"55px","top":"23px","left":"830px"},"silex-id-1496248064662-8":{"min-height":"43px","width":"55px","top":"23px","left":"895px"},"silex-id-1496248064661-2":{"min-height":"88px","background-color":"transparent","width":"960px","top":"15px","left":"216px"},"silex-id-1496248088135-11":{"min-height":"43px","width":"41px","top":"23px","left":"707px"},"silex-id-1496248088135-12":{"min-height":"74px","width":"74px","top":"7px","left":"8px"},"silex-id-1496248088135-13":{"min-height":"47px","width":"277px","top":"31px","left":"91px"},"silex-id-1496248088135-14":{"min-height":"43px","width":"58px","top":"23px","left":"761px"},"silex-id-1496248088136-15":{"min-height":"43px","width":"55px","top":"23px","left":"830px"},"silex-id-1496248088136-16":{"min-height":"43px","width":"55px","top":"23px","left":"895px"},"silex-id-1496248088135-10":{"min-height":"88px","background-color":"transparent","width":"960px","top":"15px","left":"216px"},"silex-id-1496249160049-17":{"min-height":"21px","width":"282px","top":"38px","left":"305px"},"silex-id-1496249959142-22":{"min-height":"58px","width":"172px","top":"18px","left":"400px"},"silex-id-1496249959142-26":{"min-height":"23px","width":"345px","top":"38px","left":"305px"},"silex-id-1496249959140-18":{"top":"132px","left":"5px","background-color":"rgba(247,247,247,0.9294117647058824)","min-width":"960px"},"silex-id-1496249959140-19":{"min-height":"552px","background-color":"transparent","width":"960px","top":"15px","left":"216px"},"silex-id-1496250132058-27":{"width":"907px","min-height":"54px","top":"91px","left":"26px"},"silex-id-1496250181664-30":{"min-height":"43px","width":"41px","top":"25px","left":"697px"},"silex-id-1496250181664-31":{"min-height":"74px","width":"74px","top":"7px","left":"8px"},"silex-id-1496250181664-32":{"min-height":"33px","width":"212px","top":"31px","left":"91px"},"silex-id-1496250181664-33":{"min-height":"43px","width":"58px","top":"25px","left":"751px"},"silex-id-1496250181664-34":{"min-height":"43px","width":"55px","top":"25px","left":"820px"},"silex-id-1496250181664-35":{"min-height":"43px","width":"55px","top":"25px","left":"885px"},"silex-id-1496250181664-36":{"min-height":"23px","width":"345px","top":"38px","left":"305px"},"silex-id-1496250181664-29":{"min-height":"92px","background-color":"transparent","width":"960px","top":"15px","left":"216px"},"silex-id-1496250304629-37":{"width":"907px","min-height":"105px","top":"155px","left":"26px"},"silex-id-1496250406127-38":{"width":"907px","background-color":"transparent","min-height":"177px","top":"358px","left":"26px"},"silex-id-1496250473758-39":{"width":"149px","min-height":"149px","top":"14px","left":"13px"},"silex-id-1496250485886-40":{"width":"302px","min-height":"149px","top":"14px","left":"172px","background-color":"rgba(22,46,116,0.9294117647058824)"},"silex-id-1496250669252-41":{"width":"405px","min-height":"149px","top":"14px","left":"487px"},"silex-id-1496251948909-42":{"min-height":"43px","width":"41px","top":"25px","left":"644px"},"silex-id-1496252135564-45":{"min-height":"23px","width":"345px","top":"38px","left":"305px"},"silex-id-1496252135565-46":{"min-height":"58px","width":"249px","top":"18px","left":"366px"},"silex-id-1496252135565-47":{"width":"913px","min-height":"53px","top":"91px","left":"23px"},"silex-id-1496252135565-48":{"width":"907px","min-height":"105px","top":"155px","left":"26px"},"silex-id-1496252135566-50":{"width":"149px","min-height":"149px","top":"14px","left":"13px"},"silex-id-1496252135564-43":{"top":"100px","left":"NaNpx","background-color":"rgba(247,247,247,0.9294117647058824)","min-width":"960px"},"silex-id-1496252135564-44":{"min-height":"396px","background-color":"transparent","width":"960px","top":"15px","left":"259px"},"silex-id-1496252476325-55":{"min-height":"23px","width":"345px","top":"38px","left":"305px"},"silex-id-1496252476325-56":{"min-height":"58px","width":"249px","top":"18px","left":"366px"},"silex-id-1496252476324-53":{"top":"132px","left":"5px","background-color":"rgba(247,247,247,0.9294117647058824)","min-width":"960px"},"silex-id-1496252476325-54":{"min-height":"1001px","background-color":"transparent","width":"960px","top":"15px","left":"249px"},"silex-id-1496252504718-62":{"width":"525px","min-height":"249px","top":"9px","left":"400px"},"silex-id-1496252504717-59":{"width":"935px","background-color":"transparent","min-height":"266px","top":"429px","left":"13px"},"silex-id-1496253106808-69":{"width":"525px","min-height":"249px","top":"-1px","left":"400px"},"silex-id-1496253106807-68":{"width":"935px","background-color":"transparent","min-height":"266px","top":"138px","left":"12px"},"silex-id-1496253260886-72":{"width":"378px","min-height":"249px","top":"9px","left":"9px"},"silex-id-1496253332418-74":{"width":"525px","min-height":"249px","top":"9px","left":"400px"},"silex-id-1496253332419-75":{"width":"378px","min-height":"249px","top":"9px","left":"9px"},"silex-id-1496253332418-73":{"width":"935px","background-color":"transparent","min-height":"262px","top":"725px","left":"13px"},"silex-id-1496253400407-76":{"width":"378px","min-height":"249px","top":"9px","left":"9px"},"silex-id-1496256820340-79":{"min-height":"23px","width":"345px","top":"38px","left":"305px"},"silex-id-1496256820340-80":{"min-height":"58px","width":"249px","top":"18px","left":"366px"},"silex-id-1496256820339-77":{"top":"132px","left":"5px","background-color":"rgba(247,247,247,0.9294117647058824)","min-width":"960px"},"silex-id-1496256820339-78":{"min-height":"608px","background-color":"transparent","width":"960px","top":"15px","left":"259px"},"silex-id-1496256848753-83":{"width":"929px","height":"400px","background-color":"transparent","top":"199px","left":"15px"},"silex-id-1496256926716-84":{"width":"913px","min-height":"26px","top":"134px","left":"23px"}},"mobile":{},"componentData":{"silex-id-1496256848753-83":{"name":"form1","templateName":"form","label2":"Your email address","sendTo":"liquidgeomaticscanada@gmail.com"}}}]
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+    <meta name="description" content="Geospatial data acquisition and analysis">
+
+
+    <meta name="publicationPath" content="/api/1.0/github/exec/put/liquidgeomatics.github.io/master">
+
+
+    <link href="../../../../../../../assets/favicon.png" rel="shortcut icon">
+
+
+
+
+
+
+
+
+
+    <meta name="website-width" content="960">
+    <style type="text/css" class="silex-style-settings">
+        .website-width {
+            width: 960px;
+        }
+    </style>
+
+
+    <style id="current-page-style">
+        .page-main {
+            display: inherit;
+        }
+    </style>
+    <!-- Silex HEAD tag do not remove -->
+    <!-- End of Silex HEAD tag do not remove -->
+</head>
+
+<body data-silex-id="body-initial" class="body-initial silex-runtime" data-silex-type="container">
+    <div class="silex-pages">
+        <div data-silex-type="image" class="editable-style silex-id-hamburger-menu image-element menu-button prevent-draggable prevent-resizable" data-silex-id="silex-id-hamburger-menu">
+            <img alt="open mobile menu" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAoCAYAAAC8cqlMAAAB5UlEQVR42u2ZPWvCUBSGM+UfFO3e3dLu/QN+oKj4EUXRQREEJYgoiCAu6qCogyDo7iJ21UUaKqEgCC4iiEMGB3UVgsnpTWj/wfVK2nvhGbKEPJyT996TMMzPGg6H5mKx+GgkyuWyeTQasb8OTDwef4tEIp8+n+/LYIjJZJJHQiwzm81M6OLDarWqNpsNjEYgEJCy2ewT0+/3TagighElNFAnQT6ft1ARKkJFqMgfFvF4PFpuEwFtdrcRqVarIIoirFYrIiyXSxiPx+B2u/GJBINBuF6vQHopigK1Wg2fCMdxcLlciIuoqgqNRgOfiN1uB3Qwg91uB8fjkQiHwwEmkwne1qLxS0VuKKJle71eh06nQ4Rmswk8z+MVcTqdsNlsQJZlotF7Pp8hk8ngE4lGo/qN7xG/vV4Pb0Xm8zlxkdPpBGgMx/+yJxIJKBQKRMjlcuBwOGhq/Q+RcDgMsViMCFrAuFwu/CKDwQC22y1IkkSE/X4PgiDo+xc2Ea0S9zjGa/Hb7Xbxifj9fj0K7yFSqVTwtlY6nYbpdKpPiSRYLBbQarX0PYymFhWhIlSEilCRW6GdyUqlkoVZr9dsKpXiOY6TtW+7BkNBz/7ebrcf9L+6Xq+XRYPMMyrTq5EIhUIvaAjTJb4BBNQ2yhnth0wAAAAASUVORK5CYII="
+                class="silex-element-content">
+        </div>
+
+        <a id="page-main" data-silex-type="page" class="page-element page-link-active">Main</a><a id="page-about" data-silex-type="page" class="page-element">About</a><a id="page-services" data-silex-type="page" class="page-element">Services</a><a id="page-projects"
+            data-silex-type="page" class="page-element">Projects</a><a id="page-contact" data-silex-type="page" class="page-element">Contact</a></div>
+
+
+
+
+
+
+
+
+
+
+    <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1478366444112-1 section-element" data-silex-id="silex-id-1478366444112-1" style="">
+        <div data-silex-type="container" class="editable-style silex-element-content silex-id-1478366444112-0 silex-container-content container-element prevent-draggable website-width" data-silex-id="silex-id-1478366444112-0">
+
+
+            <div data-silex-type="text" class="editable-style silex-id-1496171637415-0 text-element" data-silex-id="silex-id-1496171637415-0" data-silex-href="#!page-about">
+                <div class="silex-element-content normal">
+                    <font size="2" face="verdana, sans-serif" style="background-color: rgb(255, 255, 255);" color="#ffffff">
+                        <p class="normal">About</p>
+                    </font>
+                </div>
+            </div>
+            <div data-silex-type="image" class="editable-style silex-id-1496171474022-0 image-element" data-silex-id="silex-id-1496171474022-0"><img src="assets/LGlogo.png" class="silex-element-content"></div>
+            <div data-silex-type="text" class="editable-style silex-id-1496171481889-1 text-element" data-silex-id="silex-id-1496171481889-1">
+                <div class="silex-element-content normal">
+                    <font color="#f3f3f3" face="verdana, sans-serif" size="5">Liquid Geomatics</font>
+                </div>
+            </div>
+            <div data-silex-type="text" class="editable-style text-element silex-id-1496245596511-10" data-silex-id="silex-id-1496245596511-10" data-silex-href="#!page-services">
+                <div class="silex-element-content normal">
+                    <font size="2" face="verdana, sans-serif" style="background-color: rgb(255, 255, 255);" color="#ffffff">
+                        <p class="normal">Services</p>
+                    </font>
+                </div>
+            </div>
+            <div data-silex-type="text" class="editable-style text-element silex-id-1496245687356-11" data-silex-id="silex-id-1496245687356-11" data-silex-href="#!page-projects">
+                <div class="silex-element-content normal">
+                    <font size="2" face="verdana, sans-serif" style="background-color: rgb(255, 255, 255);" color="#ffffff">
+                        <p class="normal">Projects</p>
+                    </font>
+                </div>
+            </div>
+            <div data-silex-type="text" class="editable-style text-element silex-id-1496245771918-12" data-silex-id="silex-id-1496245771918-12" data-silex-href="#!page-contact">
+                <div class="silex-element-content normal">
+                    <font size="2" face="verdana, sans-serif" style="background-color: rgb(255, 255, 255);" color="#ffffff">
+                        <p class="normal">Contact</p>
+                    </font>
+                </div>
+            </div>
+            <div data-silex-type="text" class="editable-style text-element silex-id-1496249160049-17 page-main paged-element" data-silex-id="silex-id-1496249160049-17">
+                <div class="silex-element-content normal">
+                    <font color="#f3f3f3" face="verdana, sans-serif" size="2">- geospatial data acquisition and analysis</font>
+                </div>
+            </div>
+            <div data-silex-type="text" class="editable-style text-element silex-id-1496251948909-42 page-link-active" data-silex-id="silex-id-1496251948909-42" data-silex-href="#!page-main">
+                <div class="silex-element-content normal">
+                    <font size="2" face="verdana, sans-serif" style="background-color: rgb(255, 255, 255);" color="#ffffff">
+                        <p class="normal">Home</p>
+                    </font>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1474394621033-3 section-element page-main paged-element" data-silex-id="silex-id-1474394621033-3" style="">
+        <div data-silex-type="container" class="editable-style silex-element-content silex-id-1474394621032-2 silex-container-content container-element prevent-draggable website-width" data-silex-id="silex-id-1474394621032-2">
+
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1478366450713-3 section-element page-main paged-element" data-silex-id="silex-id-1478366450713-3" style="">
+        <div data-silex-type="container" class="editable-style silex-element-content silex-id-1478366450713-2 silex-container-content container-element prevent-draggable website-width" data-silex-id="silex-id-1478366450713-2">
+
+
+            <div data-silex-type="container" class="editable-style silex-id-1496243854412-1 container-element" data-silex-id="silex-id-1496243854412-1">
+                <div data-silex-type="text" class="editable-style silex-id-1496244135607-3 text-element" data-silex-id="silex-id-1496244135607-3" data-silex-href="#!page-services">
+                    <div class="silex-element-content normal">
+                        <div style="text-align: center;"><span style="color: rgb(243, 243, 243);"><br></span></div>
+                        <div style="text-align: center;"><span style="color: rgb(243, 243, 243);"><font face="verdana, sans-serif">More Info</font></span></div>
+                    </div>
+                </div>
+                <div data-silex-type="text" class="editable-style silex-id-1496243999010-2 text-element" data-silex-id="silex-id-1496243999010-2">
+                    <div class="silex-element-content normal">
+                        <div style="text-align: center;"><span style="background-color: rgb(243, 243, 243);"><p class="normal"><font color="#f3f3f3" face="verdana, sans-serif" size="4">SERVICES</font></p><p class="normal"><span style="color: rgb(255, 255, 255);"><font face="verdana, sans-serif" size="2">Liquid Geomatics provides consultancy services in the fields of&nbsp;geospatial data acquisition and analysis. Common services include land and water mapping projects, research, algorithm and software development, and training.</font></span></p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-silex-type="container" class="editable-style container-element silex-id-1496244282532-4" data-silex-id="silex-id-1496244282532-4">
+                <div data-silex-type="text" class="editable-style text-element silex-id-1496244282533-5" data-silex-id="silex-id-1496244282533-5" data-silex-href="#!page-projects">
+                    <div class="silex-element-content normal">
+                        <div style="text-align: center;"><span style="color: rgb(243, 243, 243);"><br></span></div>
+                        <div style="text-align: center;"><span style="color: rgb(243, 243, 243);"><font face="verdana, sans-serif">More Info</font></span></div>
+                    </div>
+                </div>
+                <div data-silex-type="text" class="editable-style text-element silex-id-1496244282533-6" data-silex-id="silex-id-1496244282533-6">
+                    <div class="silex-element-content normal">
+                        <div style="text-align: center;"><span style="background-color: rgb(243, 243, 243);"><p class="normal"><font color="#f3f3f3" face="verdana, sans-serif" size="4">PROJECTS</font></p></span><span style="background-color: rgb(243, 243, 243);"><p class="normal"><span style="color: rgb(255, 255, 255); background-color: transparent;"><font face="verdana, sans-serif" size="2">We have completed a wide range of projects for Canadian and foreign organizations, including terrestrial and marine mapping projects employing the full range of remote sensing technologies (UAVs, manned aircraft, satellites).</font></span></p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-silex-type="container" class="editable-style container-element silex-id-1496244301143-7" data-silex-id="silex-id-1496244301143-7">
+                <div data-silex-type="text" class="editable-style text-element silex-id-1496244301144-9" data-silex-id="silex-id-1496244301144-9">
+                    <div class="silex-element-content normal">
+                        <div style="text-align: center;"><span style="background-color: rgb(243, 243, 243);"><p class="normal"><font color="#f3f3f3" face="verdana, sans-serif" size="4">CLIENTS</font></p><p class="normal"><font color="#ffffff" face="verdana, sans-serif" size="2">Our clients primarily include governmental and non-governmental entities. We collaborate on our projects with governmental, academic and private-sector partners to deliver state-of-the-art solutions.</font></p></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div data-silex-type="container" class="prevent-draggable container-element editable-style section-element silex-id-1496249959140-18 page-about paged-element" data-silex-id="silex-id-1496249959140-18" style="">
+        <div data-silex-type="container" class="editable-style silex-element-content silex-container-content container-element prevent-draggable website-width silex-id-1496249959140-19" data-silex-id="silex-id-1496249959140-19">
+
+
+
+
+
+
+
+
+            <div data-silex-type="text" class="editable-style text-element page-main paged-element silex-id-1496249959142-26" data-silex-id="silex-id-1496249959142-26">
+                <div class="silex-element-content normal">
+                    <font color="#f3f3f3" face="verdana, sans-serif" size="2">- geospatial data acquisition and analysis</font>
+                </div>
+            </div>
+            <div data-silex-type="text" class="editable-style text-element silex-id-1496249959142-22" data-silex-id="silex-id-1496249959142-22">
+                <div class="silex-element-content normal">
+                    <font face="verdana, sans-serif" size="7" color="#9fc5e8">ABOUT</font>
+                </div>
+            </div>
+            <div data-silex-type="text" class="editable-style silex-id-1496250132058-27 text-element" data-silex-id="silex-id-1496250132058-27">
+                <div class="silex-element-content normal">
+                    <p class="font_7" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; font-stretch: normal; font-size: 16px; line-height: 1.5em; color: rgb(57, 114, 155); text-align: center;"><span style="margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><font face="verdana, sans-serif">Liquid Geomatics is geomatics consulting company founded in 2017&nbsp;to provide innovative and robust solutions to challenges involving geospatial data. Liquid Geomatics has unique expertise in the following fields:</font></span></p>
+                </div>
+            </div>
+            <div data-silex-type="text" class="editable-style silex-id-1496250304629-37 text-element" data-silex-id="silex-id-1496250304629-37">
+                <div class="silex-element-content normal">
+                    <p class="font_7" style="font-family: sans-serif; font-size: 16px; margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; font-stretch: normal; line-height: 1.5em; color: rgb(57, 114, 155); text-align: center;">
+                        <font face="verdana, sans-serif"><span style="margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; font-weight: bold;">Ocean mapping:&nbsp;</span>Habitat,
+                            water depth and water quality mapping, species distribution mapping</font>
+                    </p>
+                    <p class="font_7" style="font-family: sans-serif; font-size: 16px; margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; font-stretch: normal; line-height: 1.5em; color: rgb(57, 114, 155); text-align: center;">
+                        <font face="verdana, sans-serif"><br></font>
+                    </p>
+                    <p class="font_7" style="font-family: sans-serif; font-size: 16px; margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; font-stretch: normal; line-height: 1.5em; color: rgb(57, 114, 155); text-align: center;">
+                        <font face="verdana, sans-serif"><span style="margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; font-weight: bold;">UAV-based solutions:&nbsp;</span>Ultra-high
+                            resolution 3D mapping of terrestrial and marine targets</font>
+                    </p>
+                    <p class="font_7" style="font-family: sans-serif; font-size: 16px; margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; font-stretch: normal; line-height: 1.5em; color: rgb(57, 114, 155); text-align: center;">
+                        <font face="verdana, sans-serif"><br></font>
+                    </p>
+                    <p class="font_7" style="font-family: sans-serif; font-size: 16px; margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; font-stretch: normal; line-height: 1.5em; color: rgb(57, 114, 155); text-align: center;">
+                        <font face="verdana, sans-serif"><span style="margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; font-weight: bold;">Software development:</span>&nbsp;Plugin/tool
+                            development for ArcGIS and QGIS, R/Python code development</font>
+                    </p>
+                    <p class="font_7" style="font-family: sans-serif; font-size: 16px; margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; font-stretch: normal; line-height: 1.5em; color: rgb(57, 114, 155); text-align: center;">
+                        <font face="verdana, sans-serif"><br></font>
+                    </p>
+                    <p class="font_7" style="font-family: sans-serif; font-size: 16px; margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; font-stretch: normal; line-height: 1.5em; color: rgb(57, 114, 155); text-align: center;">
+                        <font face="verdana, sans-serif"><span style="margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; font-weight: bold;">Training:</span>&nbsp;Professional
+                            development/training of geospatial analysts</font>
+                    </p>
+                </div>
+            </div>
+            <div data-silex-type="container" class="editable-style silex-id-1496250406127-38 container-element" data-silex-id="silex-id-1496250406127-38">
+                <div data-silex-type="image" class="editable-style silex-id-1496250473758-39 image-element" data-silex-id="silex-id-1496250473758-39"><img src="assets/AKface.png" class="silex-element-content"></div>
+                <div data-silex-type="text" class="editable-style silex-id-1496250485886-40 text-element" data-silex-id="silex-id-1496250485886-40">
+                    <div class="silex-element-content normal">
+                        <div>
+                            <font face="verdana, sans-serif" size="5" color="#f3f3f3">&nbsp;</font>
+                        </div>
+                        <font face="verdana, sans-serif" size="5" color="#f3f3f3">&nbsp; Anders Knudby</font>
+                        <div>
+                            <font color="#6fa8dc" face="verdana, sans-serif" size="5">&nbsp; Founder</font>
+                        </div>
+                        <div>
+                            <font color="#6fa8dc" face="verdana, sans-serif" size="5">&nbsp; Principal Scientist</font>
+                        </div>
+                    </div>
+                </div>
+                <div data-silex-type="text" class="editable-style silex-id-1496250669252-41 text-element" data-silex-id="silex-id-1496250669252-41">
+                    <div class="silex-element-content normal">
+                        <font face="verdana, sans-serif" color="#6fa8dc" size="2">Anders Knudby received his BSc (Geomatics) and MSc (Geography) from the University of Copenhagen, and his PhD (Remote Sensing) in 2009 from the University of Waterloo. He has worked at the United Nations, as a consultant for Canadian
+                            and international organizations, as a researcher for the Canada Centre for Remote Sensing, and as Assistant Professor at Simon Fraser University and the University of Ottawa.</font>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-silex-type="container" class="prevent-draggable container-element editable-style section-element silex-id-1496252135564-43 page-services paged-element" data-silex-id="silex-id-1496252135564-43" style="">
+        <div data-silex-type="container" class="editable-style silex-element-content silex-container-content container-element prevent-draggable website-width silex-id-1496252135564-44" data-silex-id="silex-id-1496252135564-44">
+
+
+
+
+
+
+
+
+            <div data-silex-type="text" class="editable-style text-element page-main paged-element silex-id-1496252135564-45" data-silex-id="silex-id-1496252135564-45">
+                <div class="silex-element-content normal">
+                    <font color="#f3f3f3" face="verdana, sans-serif" size="2">- geospatial data acquisition and analysis</font>
+                </div>
+            </div>
+            <div data-silex-type="text" class="editable-style text-element silex-id-1496252135565-46" data-silex-id="silex-id-1496252135565-46">
+                <div class="silex-element-content normal">
+                    <font face="verdana, sans-serif" size="7" color="#9fc5e8">SERVICES</font>
+                </div>
+            </div>
+            <div data-silex-type="text" class="editable-style text-element silex-id-1496252135565-47" data-silex-id="silex-id-1496252135565-47">
+                <div class="silex-element-content normal">
+                    <p class="font_7" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; font-stretch: normal; font-size: 16px; line-height: 1.5em; color: rgb(57, 114, 155); text-align: center;">
+                        <font face="verdana, sans-serif">Liquid Geomatics provides consultancy services in the fields of&nbsp;geospatial data acquisition and analysis. Common services include land and water mapping projects, research, algorithm and software development, and training.</font>
+                    </p>
+                </div>
+            </div>
+            <div data-silex-type="text" class="editable-style text-element silex-id-1496252135565-48" data-silex-id="silex-id-1496252135565-48">
+                <div class="silex-element-content normal">
+                    <p class="font_7" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; font-stretch: normal; font-size: 16px; line-height: 1.5em; color: rgb(57, 114, 155); text-align: center;">
+                        <font face="verdana, sans-serif"><span style="margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; font-weight: bold;">Mapping solutions:&nbsp;</span>Whether
+                            based on satellites or UAVs, Liquid Geomatics provides mapping solutions for terrestrial and marine targets. We specialize in developing innovative geospatial data processing algorithms, translating the results into map products
+                            with state-of-the-art accuracy and scale</font>
+                    </p>
+                    <p class="font_7" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; font-stretch: normal; font-size: 16px; line-height: 1.5em; color: rgb(57, 114, 155); text-align: center;">
+                        <font face="verdana, sans-serif"><br></font>
+                    </p>
+                    <p class="font_7" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; font-stretch: normal; font-size: 16px; line-height: 1.5em; color: rgb(57, 114, 155); text-align: center;">
+                        <font face="verdana, sans-serif"><span style="margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; font-weight: bold;">Software development:</span>&nbsp;We
+                            have extensive experience integrating data processing algorithms into user-friendly tools with familiar interfaces, using plugin/tool development for ArcGIS and QGIS</font>
+                    </p>
+                    <p class="font_7" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; font-stretch: normal; font-size: 16px; line-height: 1.5em; color: rgb(57, 114, 155); text-align: center;">
+                        <font face="verdana, sans-serif"><br></font>
+                    </p>
+                    <p class="font_7" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; font-stretch: normal; font-size: 16px; line-height: 1.5em; color: rgb(57, 114, 155); text-align: center;">
+                        <font face="verdana, sans-serif"><span style="margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; font-weight: bold;">Training:</span>&nbsp;We
+                            conduct workshops for professionals, focusing on the theory and practice of specific geospatial data processing tasks. Workshops within our area of expertise are provided upon request</font>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-silex-type="container" class="prevent-draggable container-element editable-style section-element silex-id-1496252476324-53 page-projects paged-element" data-silex-id="silex-id-1496252476324-53" style="">
+        <div data-silex-type="container" class="editable-style silex-element-content silex-container-content container-element prevent-draggable website-width silex-id-1496252476325-54" data-silex-id="silex-id-1496252476325-54">
+
+
+
+
+
+
+
+
+            <div data-silex-type="text" class="editable-style text-element page-main paged-element silex-id-1496252476325-55" data-silex-id="silex-id-1496252476325-55">
+                <div class="silex-element-content normal">
+                    <font color="#f3f3f3" face="verdana, sans-serif" size="2">- geospatial data acquisition and analysis</font>
+                </div>
+            </div>
+            <div data-silex-type="text" class="editable-style text-element silex-id-1496252476325-56" data-silex-id="silex-id-1496252476325-56">
+                <div class="silex-element-content normal">
+                    <font face="verdana, sans-serif" size="7" color="#9fc5e8">PROJECTS</font>
+                </div>
+            </div>
+            <div data-silex-type="container" class="editable-style container-element silex-id-1496252504717-59 page-projects paged-element" data-silex-id="silex-id-1496252504717-59">
+                <div data-silex-type="text" class="editable-style text-element silex-id-1496252504718-62" data-silex-id="silex-id-1496252504718-62">
+                    <div class="silex-element-content normal">
+                        <h5 class="font_5" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; font-weight: normal; font-stretch: normal; line-height: 1.2em; color: rgb(57, 114, 155);"><span style="margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><font face="verdana, sans-serif" size="5"><br></font></span></h5>
+                        <h5 class="font_5" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; font-weight: normal; font-stretch: normal; line-height: 1.2em; color: rgb(57, 114, 155);"><span style="margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><font face="verdana, sans-serif" size="5">Species distribution modeling</font></span></h5>
+                        <p class="font_7" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; font-stretch: normal; font-size: 16px; line-height: normal; font-family: &quot;open sans&quot;, sans-serif; color: rgb(57, 114, 155);">&nbsp;</p>
+                        <p class="font_8" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; font-stretch: normal; line-height: 1.5em; color: rgb(12, 60, 96);">
+                            <font face="verdana, sans-serif">Liquid Geomatics is involved in a range of projects to map the geographical distribution of species. With external partners across the North Pacific region, we are developing maps of deep-sea benthic fauna such as cold-water
+                                corals and sponges for the North Pacific, and in collaboration with Brazilian and Swedish researchers we are developing regional maps of coral reef fishes in tropical nearshore environments.</font>
+                        </p>
+                    </div>
+                </div>
+                <div data-silex-type="image" class="editable-style silex-id-1496253400407-76 image-element" data-silex-id="silex-id-1496253400407-76"><img src="assets/Brazil.png" class="silex-element-content"></div>
+            </div>
+            <div data-silex-type="container" class="editable-style container-element silex-id-1496253106807-68" data-silex-id="silex-id-1496253106807-68">
+                <div data-silex-type="text" class="editable-style text-element silex-id-1496253106808-69" data-silex-id="silex-id-1496253106808-69">
+                    <div class="silex-element-content normal">
+                        <h5 class="font_5" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; font-weight: normal; font-stretch: normal; line-height: 1.2em; color: rgb(57, 114, 155);">
+                            <font face="verdana, sans-serif" size="5"><br></font>
+                        </h5>
+                        <h5 class="font_5" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; font-weight: normal; font-stretch: normal; line-height: 1.2em; color: rgb(57, 114, 155);">
+                            <font face="verdana, sans-serif" size="5">Satellite-derived bathymetry (SDB) in the Arctic</font>
+                        </h5>
+                        <p class="font_7" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; font-stretch: normal; font-size: 16px; line-height: normal; font-family: &quot;open sans&quot;, sans-serif; color: rgb(57, 114, 155);">&nbsp;</p>
+                        <p class="font_8" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; font-stretch: normal; line-height: 1.5em; color: rgb(12, 60, 96);">
+                            <font face="verdana, sans-serif">Information on water depth is essential for maritime navigation and coastal infrastructure projects, yet water depth remains unknown in most of the Canadian Arctic. Liquid Geomatics is developing innovative hybrid approaches
+                                to mapping water depth from satellite imagery, with the goal of enabling hydrographic services across the Arctic region to increase their use of satellite data.</font>
+                        </p>
+                    </div>
+                </div>
+                <div data-silex-type="image" class="editable-style silex-id-1496253260886-72 image-element" data-silex-id="silex-id-1496253260886-72"><img src="assets/GB.png" class="silex-element-content"></div>
+            </div>
+            <div data-silex-type="container" class="editable-style container-element silex-id-1496253332418-73" data-silex-id="silex-id-1496253332418-73">
+                <div data-silex-type="text" class="editable-style text-element silex-id-1496253332418-74" data-silex-id="silex-id-1496253332418-74">
+                    <div class="silex-element-content normal">
+                        <h5 class="font_5" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; font-weight: normal; font-stretch: normal; line-height: 1.2em; color: rgb(57, 114, 155);"><span style="margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><font face="verdana, sans-serif" size="5"><br></font></span></h5>
+                        <h5 class="font_5" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; font-weight: normal; font-stretch: normal; line-height: 1.2em; color: rgb(57, 114, 155);"><span style="margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><font face="verdana, sans-serif" size="5">Long-term kelp mapping and monitoring</font></span></h5>
+                        <p class="font_7" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; font-stretch: normal; font-size: 16px; line-height: normal; font-family: &quot;open sans&quot;, sans-serif; color: rgb(57, 114, 155);">&nbsp;</p>
+                        <p class="font_8" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; font-stretch: normal; line-height: 1.5em; font-family: &quot;open sans&quot;, sans-serif; color: rgb(12, 60, 96);">Liquid Geomatics is using the historical archive of satellite imagery from Landsat 4-8 as well as newer Sentinel 2 imagery to map long-term changes in kelp distribution along the US and Canadian Pacific coast. Kelp is a keystone
+                            species that creates habitat for numerous other species. Insight into the long-term spatial dynamics of kelp will improve our understanding of how both climate change and direct human impacts are likely to shape Pacific coastal
+                            ecosystems in the coming decades.</p>
+                    </div>
+                </div>
+                <div data-silex-type="image" class="editable-style image-element silex-id-1496253332419-75" data-silex-id="silex-id-1496253332419-75"><img src="assets/kelp.png" class="silex-element-content"></div>
+            </div>
+        </div>
+    </div>
+    <div data-silex-type="container" class="prevent-draggable container-element editable-style section-element silex-id-1496256820339-77 page-contact paged-element" data-silex-id="silex-id-1496256820339-77" style="">
+        <div data-silex-type="container" class="editable-style silex-element-content silex-container-content container-element prevent-draggable website-width silex-id-1496256820339-78" data-silex-id="silex-id-1496256820339-78">
+
+
+
+
+
+
+
+
+            <div data-silex-type="text" class="editable-style text-element page-main paged-element silex-id-1496256820340-79" data-silex-id="silex-id-1496256820340-79">
+                <div class="silex-element-content normal">
+                    <font color="#f3f3f3" face="verdana, sans-serif" size="2">- geospatial data acquisition and analysis</font>
+                </div>
+            </div>
+            <div data-silex-type="text" class="editable-style text-element silex-id-1496256820340-80" data-silex-id="silex-id-1496256820340-80">
+                <div class="silex-element-content normal">
+                    <font face="verdana, sans-serif" size="7" color="#9fc5e8">CONTACT</font>
+                </div>
+            </div>
+            <div data-silex-type="html" class="editable-style silex-id-1496256848753-83 html-element silex-component silex-component-form silex-use-height-not-minheight" data-silex-id="silex-id-1496256848753-83">
+                <div class="silex-element-content">
+                    <form id="id_1496257031531_283" action="https://formspree.io/liquidgeomaticscanada@gmail.com" method="POST">
+
+                        <div>
+                            <label for="field1">Name</label>
+                            <input type="text" required="" id="field1" name="field1" placeholder="Your name">
+                        </div>
+
+
+                        <div>
+                            <label for="field2">Your email address</label>
+                            <input type="text" required="" id="field2" name="field2" placeholder="your@email.com">
+                        </div>
+
+
+                        <div class="fill-vertical">
+                            <label for="field3">Your message</label>
+                            <textarea required="" id="field3" name="field3" placeholder="What you have to say"></textarea>
+                        </div>
+
+                        <input type="submit" value="Send">
+                    </form>
+                    <style>
+                        #id_1496257031531_283 input[type=text],
+                        select {
+                            width: 100%;
+                            padding: 12px 20px;
+                            margin: 8px 0;
+                            display: inline-block;
+                            border: 1px solid #ccc;
+                            border-radius: 3px;
+                            box-sizing: border-box;
+                        }
+                        
+                        #id_1496257031531_283 input[type=submit] {
+                            width: 100%;
+                            background-color: #4CAF50;
+                            color: #FFFFFF;
+                            padding: 14px 20px;
+                            margin: 8px 0;
+                            border: 1px solid #4CAF50;
+                            border-radius: 3px;
+                            cursor: pointer;
+                        }
+                        
+                        #id_1496257031531_283 label {
+                            color: #000000;
+                        }
+                        /* *************************** */
+                        /* resize the 3rd field
+   and fill the vertical space */
+                        
+                        #id_1496257031531_283 .fill-vertical {
+                            flex: 1 1 auto;
+                            display: flex;
+                            flex-direction: column;
+                        }
+                        
+                        #id_1496257031531_283 .fill-vertical textarea {
+                            flex: 1 1 auto;
+                            width: 100%;
+                            height: 150px;
+                            padding: 12px 20px;
+                            box-sizing: border-box;
+                            border: 2px solid #ccc;
+                            border-radius: 3px;
+                            background-color: #f8f8f8;
+                            font-size: 16px;
+                            resize: none;
+                        }
+                        /* ************************ */
+                        
+                        #id_1496257031531_283 {
+                            border-radius: 3px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            height: 100%;
+                        }
+                    </style>
+
+                </div>
+            </div>
+            <div data-silex-type="text" class="editable-style text-element silex-id-1496256926716-84" data-silex-id="silex-id-1496256926716-84">
+                <div class="silex-element-content normal">
+                    <p class="font_7" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; font-stretch: normal; font-size: 16px; line-height: 1.5em; color: rgb(57, 114, 155); text-align: center;">
+                        <font face="verdana, sans-serif">We're happy to hear from you. Expect a response within 1 business day</font>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
